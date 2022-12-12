@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* anchor tag style */
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: color 0.5s ease;
+    padding: 1em 0.5em;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+header {
+    background-color: beige;
+    height: 100vh;
+}
+
+/* nav styles */
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: steelblue;
+
+    position: fixed;
+    top: 0;
+
+    padding: 2rem;
+}
+
+nav > a > span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav > ul {
+    list-style: none;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav > ul > li > a:hover {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* section styles for scrolling */
+section > h1,
+footer > p {
+    text-align: center;
+    padding: 10rem;
+}
+
+section {
+    background: lightblue;
+}
+
+/* student detail card style */
+table {
+    padding: 2rem;
+    margin-left: 32%;
+    font-size: 1.5vw;
+
+    border-radius: 0.5em;
+
+    box-shadow: 10px 10px 30px -15px, 5px 5px 20px -5px;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 0.5em;
+}
+
+td {
+    font-weight: 500;
+}
+
+/* footer styles */
+footer {
+    background-color: rgb(89, 89, 201);
+}
+
+footer > p {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* media query */
+@media (min-width: 820px) {
+    header {
+        min-height: 100vh;
+    }
+    nav {
+        max-height: 50px;
+        width: 100%;
+        padding: 0 10%;
+    }
+    nav,
+    nav > ul {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav > ul {
+        width: 70%;
+    }
+
+    table {
+        margin: 100px auto;
+        font-size: 1rem;
+    }
+}
